@@ -1,0 +1,45 @@
+ .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: linear-gradient(to right,#05060a, #0f111a);
+    color: white;
+ }
+ .logo img {
+    width: 100px;
+ }
+ .nav-links{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+ }
+ .nav-links li{
+    cursor: pointer;
+    position: relative;
+ }
+ .dropdown-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #1b1c23;
+    list-style: none;
+    padding:10px 0 ;
+    border-radius: 6px;
+ }
+ .dropdown:hover .dropdown-menu {
+    display: block;
+ }
+ .dropdown-menu li{
+    padding: 7px 10px;
+    white-space: nowrap;
+ }
+ .login-btn{
+    background: #e53935;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+ }
