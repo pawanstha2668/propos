@@ -1,0 +1,13 @@
+.feature-section{
+    padding: 70px 50px;
+    text-align: center;
+}
+.features-heading{
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.features-grid{
+    display: grid;
+    grid-template-columns:repeat(4, 1fr) ;
+    gap: 20px;
+}

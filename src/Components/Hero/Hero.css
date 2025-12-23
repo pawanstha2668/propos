@@ -1,1 +1,69 @@
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 20px;
+    background: radial-gradient(circle at left, #2b0a0a, #05060a);
+    color: white;
+}
 
+.hero-right img{
+    width: 460px;
+    border-radius: 10px;
+    
+}
+.hero-left{
+    max-width: 600px;
+}
+.hero-left h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.hero-left span {
+    color: #e53935;
+}
+.hero-left p {
+font-size: 18px;
+margin-bottom: 19px;
+color:#ccc ;
+}
+.hero-middle{
+    margin-bottom: 19px;
+}
+.hero-middle button {
+    padding: 14px 28px;
+    border-radius: 8px;
+    margin-right: 18px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    
+}
+.buy-btn{
+    background-color: #e53935;
+    color: white;
+}
+.video-btn{
+    background: transparent;
+    color: white;
+    border:;
+    
+}
+.hero-middle2{
+    display:flex;
+    justify-content: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 18px;
+    
+}
+.hero-middle2 h3 {
+    font-size: 16px;
+    color: white;
+}
+.hero-middle3{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}

@@ -1,0 +1,59 @@
+.interface {
+   padding: 20px 50px;
+   text-align: center;
+   background-color: #fff5f5; 
+}
+.interface-Heading{
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.interface-text{
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    color: #555;
+}
+.slider-wrapper{
+    position: relative;
+    max-width: 1100px;
+    margin: auto;
+}
+.slider{
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px;
+    scroll-behavior: smooth;
+}
+.slider::-webkit-scrollbar{
+    display: none;
+}
+.slider img {
+    width:250px ;
+    border-radius:30px;
+    flex-shrink: 0;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+.arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color:white;
+    background-color: #d32f2f;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+}
+.arrow.left {
+    left: -30px;
+}
+.arrow.right {
+    right: -30px;
+}
+.arrow:hover{
+    background-color: #b71c1c;
+}
