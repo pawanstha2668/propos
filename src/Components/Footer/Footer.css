@@ -1,0 +1,107 @@
+.footer {
+    background: #0e0e0e;
+    color: #fff;
+    padding: 60px 100px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left {
+    max-width: 300px;
+}
+
+.logo {
+    width: 120px;
+    margin-bottom: 15px;
+}
+
+.footer-left p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-intro {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.footer-intro p {
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+.scanner {
+    width: 122px;
+}
+
+.app-button {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.footer-middle {
+    max-width: 300px;
+    gap: 25px;
+
+}
+
+.middle-col {
+    display: flex;
+    gap: 55px;
+}
+
+.footer-middle a {
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 28px;
+}
+
+.footer-middle h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 28px;
+}
+
+.footer-right {
+    max-width: 300px;
+}
+
+.footer-link a {
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.footer-link a:hover {
+    color: rgb(117, 0, 0);
+}
+
+.footer-right h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+.footer-socialmedia{
+    display:flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.footer-bottom{
+    border-top: 3px solid #333;
+    text-align: center;
+    padding-top: 25px;
+    margin-top: 30px;
+    font-size: 16px;
+}

@@ -1,0 +1,53 @@
+.customer-review{
+    padding: 60px 20px;
+    text-align: center;
+    background: #fff6f6;
+}
+.customer-review h2 {
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.customer-card {
+background: white;
+padding:20px ;
+border-radius: 10px;
+width: 350px;
+height: 300px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+text-align: center;
+}
+.customer-image{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-top:-50px ;
+    border: 3px solid #fff;
+}
+.card-review{
+    font-size: 15px;
+    margin: 20px 0px;
+    color: #555;
+}
+.card-name{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.card-position{
+    font-size: 20px;
+    font-weight: 600px;
+    color: #777;
+    margin-bottom: 12px;
+}
+.card-star{
+    font-size: 15px;
+    color: gold;
+}
+
+

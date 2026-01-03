@@ -1,26 +1,44 @@
 import React from 'react'
 import './Navbar.css'
 import logo from '../../assets/logo.png'
+import {NavLink, } from 'react-router-dom'
 const Navbar = () => {
   return (
     <nav className='navbar'>
       <div className='logo'>
-        <img src={logo} alt="" />
+        <NavLink to="">
+        <img src={logo} alt="logo" />
+        </NavLink>
       </div>
 
       <ul className='nav-links'>
-        <li>Home</li>
-        <li>About Us</li>
-        <li>Pricing</li>
+        <NavLink to= "/">
+          <li>Home</li>
+        </NavLink>
+        <NavLink to= "/about">
+          <li>About</li>
+        </NavLink>
+        <NavLink to= "/pricing">
+          <li>Pricing</li>
+        </NavLink>
+         
         <li className='dropdown'>
           Pages ▾
           <ul className='dropdown-menu'>
-            <li>Blog</li>
-            <li>Term and Condition</li>
-            <li>Policy</li>
+            <NavLink to= "/blog">
+          <li>Blog</li>
+        </NavLink>
+        <NavLink to= "/term">
+          <li>Term and condition</li>
+        </NavLink>
+        <NavLink to= "/policy">
+          <li>Policy</li>
+        </NavLink>
           </ul>
         </li>
-        <li>Contact Us</li>
+        <NavLink to= "/contact">
+          <li>Contact</li>
+        </NavLink>
          </ul>
 
          <button className='login-btn'>Login</button>

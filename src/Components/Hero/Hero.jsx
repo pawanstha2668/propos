@@ -7,6 +7,7 @@ import googlepay from '../../assets/googlepay.png'
 const Hero = () => {
   return (
      <section className='hero'>
+      <div className='container'> 
         <div className='hero-left'>
             <h1>
           POS SAAS Flutter APP <br />
@@ -35,6 +36,7 @@ const Hero = () => {
 
         <div className='hero-right'>
             <img src={hero} alt=""/>
+        </div>
         </div>
 
      </section>
