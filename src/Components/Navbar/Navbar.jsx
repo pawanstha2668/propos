@@ -1,47 +1,48 @@
 import React from 'react'
 import './Navbar.css'
 import logo from '../../assets/logo.png'
-import {NavLink, } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 const Navbar = () => {
   return (
     <nav className='navbar'>
       <div className='logo'>
-        <NavLink to="">
         <img src={logo} alt="logo" />
-        </NavLink>
       </div>
 
       <ul className='nav-links'>
-        <NavLink to= "/">
+        <NavLink to="/">
           <li>Home</li>
         </NavLink>
-        <NavLink to= "/about">
+        <NavLink to="/about">
           <li>About</li>
         </NavLink>
-        <NavLink to= "/pricing">
+        <NavLink to="/pricing">
           <li>Pricing</li>
         </NavLink>
-         
+
         <li className='dropdown'>
           Pages ▾
           <ul className='dropdown-menu'>
-            <NavLink to= "/blog">
-          <li>Blog</li>
-        </NavLink>
-        <NavLink to= "/term">
-          <li>Term and condition</li>
-        </NavLink>
-        <NavLink to= "/policy">
-          <li>Policy</li>
-        </NavLink>
+            <NavLink to="/blog">
+              <li>Blog</li>
+            </NavLink>
+            <NavLink to="/term">
+              <li>Term and condition</li>
+            </NavLink>
+            <NavLink to="/policy">
+              <li>Policy</li>
+            </NavLink>
           </ul>
         </li>
-        <NavLink to= "/contact">
+        <NavLink to="/contact">
           <li>Contact</li>
         </NavLink>
-         </ul>
+      </ul>
+       <NavLink to="/login">
+        <button className='login-btn'>Login</button>
+       </NavLink>
+      {/* <button className='login-btn'>Login</button> */}
 
-         <button className='login-btn'>Login</button>
     </nav>
   )
 }
