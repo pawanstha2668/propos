@@ -1,11 +1,14 @@
  import React from 'react'
 import './Login.css'
 import hero from '../../assets/hero.png'
+import { NavLink } from 'react-router-dom'
 const Login = () => {
     return (
         <div className='login'>
             <div className='login-left'>
-                <img src={hero} alt="" />
+                 <div  className='img-login'>
+                    <img src={hero} alt="" />
+                 </div>
             </div>
 
             <div className='login-right'>
@@ -28,7 +31,9 @@ const Login = () => {
 
                     <button className='Login-btn'>LogIn</button>
                     <div className='create'>
-                        <p className='back'>Back to Home</p>
+                        <NavLink to="/">
+                          <p className='back'>Back to Home</p>
+                        </NavLink>
                         <p className='account-create'>Create an account.</p>
                     </div>
 

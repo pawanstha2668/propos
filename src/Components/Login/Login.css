@@ -1,8 +1,11 @@
 .login {
     display: flex;
-    width: 100%;
-    background: #c52127;
-
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #c52127; 
+    padding: 40px;
+    box-sizing: border-box;
 }
 
 .login-left {
@@ -10,10 +13,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-right: 40px;
+    position: relative;
+}
+.img-login{
+    width: 520px;
+    height: 520px;
+    background: rgba(255,255,255,0.12);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 
 .login-left img {
     width: 80%;
+    max-width: 420px;
 }
 
 .login-right {
@@ -21,18 +36,19 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    align-items:center;
 }
 
 .login-card {
     background: #fff;
-    width: 420px;
-    padding: 45px;
+    width: 450px;
+    padding: 35px 40px;
     border-radius: 10px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.25);
 }
 
 .login-card h2 {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -43,6 +59,7 @@
 }
 
 .login-card h5 {
+    font-size: 18px;
     color: #555;
     margin-bottom: 10px;
 }
@@ -66,26 +83,30 @@
 .option {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: 18px;
 }
 
-.Login-btn {
+ .Login-btn {
     width: 100%;
     background: #c52127;
     color: #fff;
-    padding: 14px;
-    font-size: 20px;
+    padding: 13px;
+    font-size: 18px;
     font-weight: 600;
-    margin-bottom: 15px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.Login-btn:hover {
+    background: #a91b20;
 }
 
 .create {
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
-}
-
-.back {
     cursor: pointer;
 }
 
@@ -95,16 +116,18 @@
 
 .login-option {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 25px;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
     margin-bottom: 15px;
+
 }
 
 .login-option button {
-    padding: 10px;
+    padding: 19px;
     border-radius: 8px;
     border: none;
     color: #fff;
+    font-size: 18px;
 }
 
 .super-admin {
@@ -141,12 +164,30 @@
 
 .x button {
     width: 100%;
+    padding: 11px;
+    cursor: pointer;
+    border-radius:8px ;
     border: 1px solid black;
     background: #fff;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .google button {
     width: 100%;
+    padding: 11px;
+    cursor: pointer;
+    border-radius:8px ;
     border: 1px solid black;
     background: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+@media (max-width: 900px) {
+    .login-left {
+        display: none;
+    }
+    .login {
+        justify-content: center;
+    }
 }

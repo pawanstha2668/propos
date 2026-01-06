@@ -38,7 +38,7 @@ const Navbar = () => {
           <li>Contact</li>
         </NavLink>
       </ul>
-       <NavLink to="/login">
+       <NavLink to="login">
         <button className='login-btn'>Login</button>
        </NavLink>
       {/* <button className='login-btn'>Login</button> */}
