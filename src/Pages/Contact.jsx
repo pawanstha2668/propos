@@ -25,7 +25,7 @@ const Contact = () => {
           <input className='message' type="message" placeholder='Enter Your Message'required />
            
            <div>
-            <button className='contact-btn'>Book A Demo</button>
+            <button className='contact-btn' >Book A Demo</button>
            </div>
         </div>
       </div>

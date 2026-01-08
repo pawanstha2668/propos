@@ -38,7 +38,13 @@
  .dropdown-menu li{
     padding: 7px 10px;
     white-space: nowrap;
+    background: white;
+    color: #05060a;
  }
+.dropdown-menu li:hover{
+   color: #e53935;
+   
+}
  .login-btn{
     background: #e53935;
     border: none;

@@ -1,45 +1,51 @@
-import React, { useState } from 'react'
+import  { useState, useRef } from 'react'
 import './Videodemo.css'
+import video from '../../assets/video.mp4'
 import hero from '../../assets/hero.png'
 
+
 const Videodemo = () => {
-    const [open, setOpen] = useState(false)
+  const [playstate, setPlaystate] = useState(false);
+  const player = useRef(null);
 
-    return (
-        <div className="videodemo">
-            <h2>Watch Video Demo</h2>
-            <p>
-                Pos Saas - Android Inventory Full App + Super Admin panel With Firebase
-                Live Demo
-            </p>
+  const closePlayer = (e) => {
+    if (e.target === player.current) {
+      setPlaystate(false);
+    }
+  };
 
-            <div className="video-card" onClick={() => setOpen(true)}>
-                <img src={hero} alt="Video thumbnail" />
-                <div className="play-btn">▶</div>
-            </div>
-        
-            {open && (
-                <div className="modal-overlay" onClick={() => setOpen(false)}>
-                    <div
-                        className="modal-content"
-                        onClick={(e) => e.stopPropagation()}
-                    >
-                        <button className="close-btn" onClick={() => setOpen(false)}>
-                            ✕
-                        </button>
+  return (
+    <div className="videodemo">
+      <h2>Watch Video Demo</h2>
+      <p>
+        Pos Saas - Android Inventory Full App + Super Admin panel With Firebase
+        Live Demo
+      </p>
 
-                        <iframe
-                            src="https://www.youtube.com/embed/BAHNFPcxyFk"
-                            title="POS Demo Video"
-                    
-                            allowFullScreen
-                        ></iframe>
-                    </div>
-                </div>
-            )}
-
+      <div className="video-card">
+        <img src={hero} alt="Video thumbnail" />
+        <div
+          className="play-btn"
+          onClick={() => setPlaystate(true)}
+        >
+          ▶
         </div>
-    );
+      </div>
+
+      <div
+        className={`video-player ${playstate ? '' : 'hide'}`}
+        ref={player}
+        onClick={closePlayer}
+      >
+        <video src={video} autoPlay controls></video>
+      </div>
+    </div>
+  );
 };
 
-export default Videodemo
+export default Videodemo;
+
+
+
+
+
